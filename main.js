@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const userVerification = require('./middleware/userm')
+const userVerification = require('./Middleware/userm')
 
 
 const user = require('./controllers/user')
