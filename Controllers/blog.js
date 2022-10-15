@@ -3,7 +3,7 @@ var app = express();
 var fs = require("fs");
 const { v4: uuidv4 } = require('uuid');     // this is used to create random id
 const router = express.Router()
-var utility = require('../utility/utility')
+var utility = require('../Utility/utility')
 
 var postlist = []
 
