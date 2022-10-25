@@ -14,7 +14,6 @@ router.post('/login', (req, res) => {
         users = JSON.parse(data)
         filtered = users.filter((x) => {
             return (x.email == email && utility.decrypt(x.password) == password)
-
         });
         if (filtered.length == 0) {
             return res.json({ msg: 'Unauthorised user' })
